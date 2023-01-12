@@ -22,17 +22,39 @@ comida.unshift("manzana");
 comida[1]="hamburguesa";
 // Recorre la lista de comida utilizando un bucle while y muestra cada elemento en la consola.
 var k=0;
-while
+while (k<comida.length) {
+    console.log(comida[k]);
+    k=k+1;
+}
 // Crea una función que reciba una lista como parámetro y devuelva el último elemento de la lista.
-
+function ult_elem(lista) {
+    console.log(lista[lista.length-1]);
+}
 // Crea una función que reciba una lista y un elemento como parámetros y
 //agregue el elemento a la lista si no se encuentra en ella.
-
+function agregar(lista, elemento) {
+    lista.push(elemento);
+}
 // Crea una función que reciba una lista como parámetro y
 //devuelva una nueva lista con los elementos de la lista original en orden inverso.
-
+function invertir(lista) {
+    lista.reverse();
+}
 // Crea una función que reciba una lista de números como parámetro y
 //devuelva la suma de todos los números de la lista.
-
+function sumar(lista) {
+    var m=0;
+    for (let l=0; l<lista.length; l++) {
+        m=m+lista[l];
+    }
+    console.log(m);
+}
 // Crea una función que reciba una lista de números como parámetro y
 //devuelva la media de todos los números de la lista.
+function media(lista) {
+    var o=0;
+    for (let n=0; n<lista.length; n++) {
+        o=o+lista[n];
+    }
+    console.log(o/lista.length);
+}
