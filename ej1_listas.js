@@ -11,7 +11,7 @@ while (i<=20) {
 numeros_impares=[];
 for (let j=0; j<=19; j++) {
     if (j%2==1) {
-        numeros_impares.push(j)
+        numeros_impares.push(j);
     }
 }
 // Crea una lista de comida y utiliza un array literal para agregar varios platos a la lista.
